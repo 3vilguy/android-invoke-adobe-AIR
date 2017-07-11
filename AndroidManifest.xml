@@ -35,6 +35,7 @@
             </intent-filter>
             <meta-data android:name="initialcontent" android:value="MobileTest.swf"/> 
         </activity>
+        <service android:enabled="true" android:name="TestService" />
     </application>
 
 </manifest>
