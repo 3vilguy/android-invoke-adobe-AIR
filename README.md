@@ -14,3 +14,10 @@ To use different AIR SDK version, few files in `libs` folder have to be updated:
 
 Last but not least:
 * Inside `assets / META-INF / AIR / application.xml`, `<application xmlns="http://ns.adobe.com/air/application/XX.0">` has to be updated with current SDK version.
+
+## Flash traces in `logcat`
+
+By default you won't be able to see any traces from flash in `logcat`. That's because project is using `AppEntry_release.jar`.<br/>
+To see flash traces:
+
+* In `libs` folder, replace **AppEntry_release.jar** with **AppEntry_debug.jar**. Both files are in same place inside `${AIR_SDK} / lib / adt.jar`.
